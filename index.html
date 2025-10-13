@@ -10,6 +10,13 @@
 <body>
    <header>
         <h1>Daniela Joselyne Espinoza Toala</h1>
+        <img 
+            src="https://picsum.photos/300/200" 
+            alt="Imagen de ejemplo de perfil" 
+            width="300" 
+            height="200">
+        <p>(Imagen de ejemplo generada con <a href="https://picsum.photos" target="_blank">Picsum Photos</a>)</p>
+
         <p>Estudiante | danjespi@espol.edu.ec | +593969253684</p>
     </header>
     <nav>
@@ -19,6 +26,7 @@
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#formulario">Formulario</a></li>
             
         </ul>
     </nav>
@@ -31,6 +39,7 @@
                 responsabilidad, creatividad y capacidad de trabajar en equipo. Busco seguir aprendiendo y 
                 aplicar mis conocimientos en proyectos tecnológicos innovadores.</p>
         </section>
+        
         <section id="experiencia">
             <h2>Experiencia</h2>
             <p>En 2024 participé en el proyecto Aula Link para la ESPOL, un proyecto académico de la materia Interacción 
@@ -43,11 +52,25 @@
         </section>
         <section id="educacion">
             <h2>Educación</h2>
-            <p>Escuela Superior Politécnica del Litoral (ESPOL)</p>
-            <p>Ingeniería en Ciencias de la Computación — 2022 - Actualidad</p>
-            <br>
             <p>Unidad Educativa Fiscomisional Santa Maria Mazzarello</p>
             <p>Bachiller Técnico — 2023</p>
+            <br>
+            <p>Escuela Superior Politécnica del Litoral (ESPOL)</p>
+            <p>Ingeniería en Ciencias de la Computación — 2022 - Actualidad</p>
+            
+            <h3>Ubicación</h3>
+            <p>Esta es la ubicación de la Escuela Superior Politécnica del Litoral (ESPOL):</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3266.1592746672973!2d-79.97042201251402!3d-2.144663529885687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d7303bb0133cd%3A0x66c18bd9810f31cb!2sFacultad%20de%20Ingenier%C3%ADa%20en%20Electricidad%20y%20Computaci%C3%B3n%20FIEC%20-%20ESPOL!5e1!3m2!1ses-419!2sec!4v1760367340872!5m2!1ses-419!2sec" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+
+            </iframe>
+        
             
         </section>
         <section id="habilidades">
@@ -58,6 +81,30 @@
                 <li>Base de Datos: SQL</li>
                 <li>Herramientas: Git</li>
                 <li>Idiomas: Español (nativo), Inglés (intermedio avanzado)</li>
+            </ul>
+            <h3>Resumen de conocimientos técnicos</h3>
+            <table>
+                <tr>
+                    <th>Lenguaje</th>
+                    <th>Nivel</th>
+                    <th>Experiencia</th>
+                </tr>
+                <tr>
+                    <th>Java</th>
+                    <td>Intermedio</td>
+                    <td>2 años</td>
+                </tr>
+                <tr>
+                    <th>HTML/CSS</th>
+                    <td>Principiante</td>
+                    <td>1 años</td>
+                </tr>
+                <tr>
+                    <th>Python</th>
+                    <td>Intermedio</td>
+                    <td>2 año</td>
+                </tr>
+            </table>
         </section>
         <section id="proyectos">
             <h2>Proyectos</h2>
@@ -72,8 +119,67 @@
                     lista circular para almacenar y gestionar contactos. Incluye funcionalidades como agregar, eliminar, 
                     buscar y mostrar contactos de manera eficiente.</li>     
             </ol>
+             <p>
+                Puedes conocer más sobre mis proyectos en 
+                <a href="https://github.com/danx111" target="_blank">mi perfil de GitHub</a>.
+            </p>
         </section>
+        <iframe
+            width="400"
+            height="225"
+            src="https://www.youtube.com/embed/U2cwkkKdjuE?si=uTCl2XlfN78V81gB"
+            title="Ingeniería en Ciencias de la Computación"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+
     </main>
+    <section aria-labelledby="formulario">
+        <h2>Formulario de contacto</h2>
+        <p>Si deseas comunicarte conmigo, puedes completar el siguiente formulario:</p>
+
+        <form action="#" method="post">
+
+            <p>
+            <label for="nombre">Nombre completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo">
+            </p>
+
+            <p>
+            <label for="motivo">Motivo del contacto:</label>
+            <select id="motivo" name="motivo">
+                <option value="trabajo">Oportunidad laboral</option>
+                <option value="colaboracion">Colaboración en proyecto</option>
+                <option value="consulta">Consulta general</option>
+            </select>
+            </p>
+
+            <fieldset>
+            <legend>¿Cómo prefieres que te contacte?</legend>
+            <label><input type="radio" name="contacto" value="correo"> Correo electrónico</label>
+            <label><input type="radio" name="contacto" value="telefono"> Teléfono</label>
+            </fieldset>
+
+            <p>
+            <label for="habilidades">Áreas de interés (puedes seleccionar varias):</label><br>
+            <select id="habilidades" name="habilidades" multiple size="3">
+                <option value="frontend">Desarrollo Frontend</option>
+                <option value="backend">Desarrollo Backend</option>
+                <option value="uiux">Diseño UI/UX</option>
+            </select>
+            </p>
+
+            <p>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escribe tu mensaje aquí..."></textarea>
+            </p>
+
+            <button type="submit">Enviar formulario</button>
+        </form>
+        </section>
+
+
     <hr>
     <footer>
         <p>© Daniela Espinoza - 2025</p>
