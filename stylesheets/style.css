@@ -5,6 +5,14 @@
 header h1 {
   text-align: center;
   font-weight: bold;
+  color: #004080;
+}
+header {
+  display: flex;
+  flex-direction: column; /* coloca los elementos uno debajo del otro */
+  align-items: center;    /* centra horizontalmente */
+  text-align: center;     /* centra el texto */
+  padding: 20px;
 }
 
 #photo {
@@ -15,15 +23,12 @@ header h1 {
 .subtitle {
   color: rgb(151, 156, 165 / 0.89);
   text-transform: uppercase;
+  color: #004080;
 }
 
 footer p {
   text-align: right;
   font-style: italic;
-}
-
-nav > ul {
-  list-style: none;
 }
 
 section {
@@ -49,6 +54,23 @@ nav > ul {
   padding: 0;
   margin: 0;
 }
+nav {
+
+  background:  #004080;
+  padding: 10px 0;
+  text-align: center;    
+  font-weight: bold;     /* Espaciado vertical */
+}
+nav a {
+  color: white;              /* Cambia el color del texto */
+  text-decoration: none;
+  margin: 0 15px;
+  
+}
+
+nav a:hover {
+  text-decoration: underline; /* Efecto al pasar el mouse */
+}
 
 section > form {
   display: grid; 
@@ -72,4 +94,75 @@ section > form {
   grid-column: 1 / -1;               
   text-align: center;                
 }
+table, th, td {
+  text-align: center; 
+  vertical-align: middle; 
+}
 
+blockquote {
+  font-style: italic;
+  color: #004080;
+  border-left: 4px solid #ccc;
+  margin: 1em 0;
+  padding-left: 1em;
+}
+
+iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  margin-top: 1rem;
+}
+section > section {
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+}
+#habilidades{
+  text-align: center;
+}
+
+/* Contenedor general */
+.habilidades {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+/* Distribución en 3 columnas */
+.contenedor-habilidades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: left;
+}
+
+/* Tabla de idiomas */
+.idiomas table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #f9fbfd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.05);
+}
+
+.idiomas th {
+  background-color: #a4c0e2;
+  color: rgb(0, 0, 0);
+  padding: 8px;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.idiomas td {
+  padding: 8px;
+  border-bottom: 1px solid #d8e1e8;
+  font-size: 0.95em;
+}
+
+.idiomas tr:last-child td {
+  border-bottom: none;
+}
