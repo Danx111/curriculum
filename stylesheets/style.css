@@ -26,25 +26,50 @@ nav > ul {
   list-style: none;
 }
 
-/* Reglas para todas las etiquetas <section> */
 section {
-  /* a) Borde de 0.2 puntos, sólido y color gris azulado claro */
   border: 0.2pt solid #cedddd;
-
-  /* b) Márgenes: 4px arriba, 2px a los lados y 8px abajo */
   margin: 4px 2px 8px 2px;
-
-  /* c) Padding (espacio entre borde y contenido) */
   padding: 1.5% 0.8%;
-
-  /* d) Margen inferior ajustado con relación al tamaño de la raíz */
   margin-bottom: 1.2rem;
 }
 
 section {
-  /* 1️⃣ Borde redondeado */
+
   border-radius: 5px;
-    
-  /* 2️⃣ Sombra con desplazamiento de 3px en ambos ejes, desenfoque de 1px */
   box-shadow: 3px 3px 1px rgba(235, 234, 234, 0.6);
 }
+
+nav > ul {
+  display: flex; 
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section > form {
+  display: grid; 
+  
+  grid-template-columns: 1fr;
+
+  row-gap: 1rem;
+
+  column-gap: 1rem;
+}
+
+#referencias {
+  display: grid;                     
+  grid-template-columns: repeat(3, 1fr); 
+  row-gap: 1rem;
+  column-gap: 1rem;
+                        
+}
+
+#referencias > h2 {
+  grid-column: 1 / -1;               
+  text-align: center;                
+}
+
