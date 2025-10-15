@@ -55,21 +55,24 @@ nav > ul {
   margin: 0;
 }
 nav {
-
+  position: fixed;       
+  top: 0;                /* se ubica en la parte superior */
+  left: 0;
+  width: 100%;  
   background:  #004080;
   padding: 10px 0;
   text-align: center;    
-  font-weight: bold;     /* Espaciado vertical */
+  font-weight: bold;     
 }
 nav a {
-  color: white;              /* Cambia el color del texto */
+  color: white;              
   text-decoration: none;
   margin: 0 15px;
   
 }
 
 nav a:hover {
-  text-decoration: underline; /* Efecto al pasar el mouse */
+  text-decoration: underline; 
 }
 
 section > form {
@@ -130,7 +133,10 @@ section > section {
   padding: 20px;
   background-color: #fff;
 }
-
+section > h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
 /* Distribución en 3 columnas */
 .contenedor-habilidades {
   display: grid;
@@ -150,11 +156,10 @@ section > section {
 }
 
 .idiomas th {
-  background-color: #a4c0e2;
+  background-color: #bfd6f3;
   color: rgb(0, 0, 0);
   padding: 8px;
-  text-transform: uppercase;
-  font-size: 0.9em;
+  font-size: 0.95em;
 }
 
 .idiomas td {
