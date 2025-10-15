@@ -11,13 +11,12 @@
    <header>
         <h1>Daniela Joselyne Espinoza Toala</h1>
         <img 
+            src="foto_perfil.png"
+            alt="Foto de perfil de Daniela Espinoza"
+            width="200"
             id="photo"
-            src="https://picsum.photos/300/200" 
-            alt="Imagen de ejemplo de perfil" 
-            width="300" 
-            height="200">
-        <p>(Imagen de ejemplo generada con <a href="https://picsum.photos" target="_blank">Picsum Photos</a>)</p>
-
+            >
+        
         <p>Estudiante | danjespi@espol.edu.ec | +593969253684</p>
     </header>
     <nav>
@@ -27,6 +26,7 @@
             <li><a href="#educacion">Educación</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#referencias">Referencias</a></li>
             <li><a href="#formulario">Formulario</a></li>
             
         </ul>
@@ -125,6 +125,33 @@
                 <a href="https://github.com/danx111" target="_blank">mi perfil de GitHub</a>.
             </p>
         </section>
+        <section id="referencias">
+            <h2 class="subtitle">Referencias</h2>
+            <article>
+                <h3>Ing. Alexandra Arias</h3>
+                <p>Profesor de Organización de computadores - Escuela Superior Politécnica del Litoral (ESPOL)</p>
+                <blockquote>
+                "Daniela se distingue por su interés en la arquitectura de computadores y su dedicación al aprendizaje práctico. 
+                Es una estudiante comprometida y perseverante"
+                </blockquote>
+            </article>
+            <article>
+                <h3>Ing. Katherine Chilluiza</h3>
+                <p>Profesora de Interacción Humano Computador - Escuela Superior Politécnica del Litoral (ESPOL)</p>
+                <blockquote>
+                "Daniela es una estudiante dedicada y creativa, con habilidades destacadas en diseño de interfaces 
+                y trabajo en equipo. Su participación en proyectos académicos ha sido ejemplar"
+                </blockquote>
+            </article>
+            <article>
+                <h3>Ing. Gladys Carrillo</h3>
+                <p>Profesora de Interacción Humano Computador - Escuela Superior Politécnica del Litoral (ESPOL)</p>
+                <blockquote>
+                "Daniela sobresalió en el desarrollo de aplicaciones orientadas a objetos, aplicando principios SOLID y patrones de diseño con gran precisión. 
+                Su código siempre fue ordenado, bien documentado y demostraba una excelente comprensión de la lógica y estructura del software"
+                </blockquote>
+            </article>    
+        </section>
         <iframe
             width="400"
             height="225"
@@ -141,40 +168,37 @@
         <p>Si deseas comunicarte conmigo, puedes completar el siguiente formulario:</p>
 
         <form action="#" method="post">
-
-            <p>
             <label for="nombre">Nombre completo:</label>
             <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo">
-            </p>
-
-            <p>
+            
             <label for="motivo">Motivo del contacto:</label>
             <select id="motivo" name="motivo">
+                <option value="saludo">--Seleccione--</option>
                 <option value="trabajo">Oportunidad laboral</option>
                 <option value="colaboracion">Colaboración en proyecto</option>
                 <option value="consulta">Consulta general</option>
             </select>
-            </p>
-
+            
             <fieldset>
             <legend>¿Cómo prefieres que te contacte?</legend>
             <label><input type="radio" name="contacto" value="correo"> Correo electrónico</label>
             <label><input type="radio" name="contacto" value="telefono"> Teléfono</label>
             </fieldset>
+            
+            <fieldset>
+            <legend>Áreas de interés (puede seleccionar varias)</legend>
+            <input type='checkbox' tabindex='20'
+            name='areaInteres' value='Desarrollo Frontend' > Desarrollo Frontend
+            <input type='checkbox' tabindex='21'
+                        name='areaInteres' value='Desarrollo Backend' > Desarrollo Backend
+            <input type='checkbox' tabindex='22'
+                        name='areaInteres' value='Diseño UI/UX' > Diseño UI/UX
+            </fieldset>    
 
-            <p>
-            <label for="habilidades">Áreas de interés (puedes seleccionar varias):</label><br>
-            <select id="habilidades" name="habilidades" multiple size="3">
-                <option value="frontend">Desarrollo Frontend</option>
-                <option value="backend">Desarrollo Backend</option>
-                <option value="uiux">Diseño UI/UX</option>
-            </select>
-            </p>
-
-            <p>
-            <label for="mensaje">Mensaje:</label><br>
+            
+            <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="4" cols="40" placeholder="Escribe tu mensaje aquí..."></textarea>
-            </p>
+            
 
             <button type="submit">Enviar formulario</button>
         </form>
